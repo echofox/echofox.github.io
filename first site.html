@@ -1,21 +1,99 @@
 <!DOCTYPE html>
 
 <head>
-
-  <meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href='css/bootstrap.css' rel='stylesheet'>
    <link href='main.css' rel='stylesheet'>
 
 <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <style>
+#primary_nav_wrap
+{
+  margin-top:0px
+}
+
+#primary_nav_wrap ul
+{
+  list-style:none;
+  position:relative;
+  float:center;
+  margin:0;
+  padding:0
+}
+
+#primary_nav_wrap ul a
+{
+  display:block;
+  color:#333;
+  text-decoration:none;
+  font-weight:700;
+  font-size:20px;
+  line-height:52px;
+  padding:0 15px;
+  font-family:"Open Sans"
+}
+
+#primary_nav_wrap ul li
+{
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+  background:#ddd
+}
+
+#primary_nav_wrap ul li:hover
+{
+  background:#f6f6f6
+}
+
+#primary_nav_wrap ul ul
+{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#fff;
+  padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+  float:none;
+  width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+  line-height:120%;
+  padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+  top:0;
+  left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+  display:block
+}
+
+
 body {
   font-family: 'Amatic SC';
   margin: 0 auto;
-  max-width: 600px;
-   background-image: url("http://beautyjunket.com/wp-content/uploads/2013/09/new-backgrounds-wide-makeup.jpg");
+  max-width: 1000px;
+   background-image: url("http://i.imgur.com/l5wCH0n.gif");
    background-position:center;
 }
 div {
@@ -27,7 +105,7 @@ div {
 
 }
 h1 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC';
   text-align: center;
   font-size: 100px;
   color: black;
@@ -47,8 +125,9 @@ p {
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   padding: 10px;
-  line-height: 28px;
+  line-height: 68px;
   text-align: justify;
+  font-size: 45px;
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -67,31 +146,38 @@ p {
   background-position:center;
 }
 .price {
-  float: right;
+  float: center;
 }
 .stitched {
    padding: 20px;
    margin: 10px;
-   background: #66c6c0;
+   background:#c066c6;
    opacity:1;
-   font-size: 100px;
+   font-size: 150px;
    font-weight: bold;
    line-height: 1.3em;
-   border: 2px groove #fff;
+   border: 2px groove;
    border-radius: 10px;
- 
-   text-shadow: -1px -1px #fff;
    font-weight: normal;
 }
-
+.lower {
+   padding: 30px;
+   margin: 10px;
+   background: #66c6c0;
+   opacity:1;
+   font-size: 55px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px groove;
+   border-radius: 10px;
+   font-weight: normal;
+}
 .btn-lg {
   font-size: 60px;
-margin: 10px;
-  position: center;
+  padding: 30px;
+margin: 40px;
+position: center right;
 
-
-
-}
 }
 
 </style>
@@ -99,20 +185,66 @@ margin: 10px;
 </head>
 
 <body>
+  <nav id="primary_nav_wrap">
+<ul>
+  <li class="current-menu-item"><a href="#">Home</a></li>
+  <li><a href="#">Blog</a>
+    <ul>
+      <li><a href="#">reviews</a></li>
+      <li><a href="#">dupes</a></li>
+      <li><a href="#">tutorials</a></li>
+      <li><a href="#">random</a>
+        <ul>
+          <li><a href="#">hello</a>
+            <ul>
+              <li><a href="#">Sub Deep 1</a></li>
+              <li><a href="#">Sub Deep 2</a></li>
+              <li><a href="#">Sub Deep 3</a></li>
+                <li><a href="#">Sub Deep 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Deep Menu 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Sub Menu 5</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Bridal</a>
+    <ul>
+      <li><a href="#">Traditional</a></li>
+      <li><a href="#">Contempoary</a></li>
+      <li><a href="#">Prices</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Occasions</a>
+    <ul>
+      <li class="dir"><a href="#">Debs</a></li>
+      <li class="dir"><a href="#">Hens</a></li>
+            <li class="dir"><a href="#">Party</a></li>
+        </ul>
+      
+  <a href=</li>
+  <li><a href="#">Effects</a></li>
+  
+  <li><a href="#">Beauty Treatments</a></li>
+  <li><a href="#"> </a></li>
+  <li><a href="#">Contact Tara</a></li>
+</ul>
+</nav>
 <h1 class="stitched">Tara Finn</h1>
-<h2>Makeup Artist</h2>
+<h2 class="lower">Makeup Artist</h2>
 <div class="first">
-  <p>Bridal <span class="price">from €60</span><br />
+  <p>Bridal <span class="price">from 60Euro</span><br />
  </p>
 </div>
 
 <div class="second">
-  <p>Fashion <span class="price">from €40</span><br />
+  <p>Fashion <span class="price">from 40Euro</span><br />
   </p>
 </div>
   
 <div class="dessert">
-  <p>Special Effects <span class="price">from €20</span><br />
+  <p>Special Effects <span class="price">from 20Euro</span><br />
   </p>
 </div>
  <div id='social-buttons'>
@@ -121,7 +253,9 @@ margin: 10px;
       <button class='btn btn-lg btn-facebook'>Facebook</button>
       <button class='btn btn-lg btn-pinterest'>Pinterest</button>
 
-    </div>
+ </div>
+
+
 
 
 </body>
