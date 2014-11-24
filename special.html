@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="js/jquery-1.7.1.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -12,9 +12,10 @@
 
 <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <style>
+
 #primary_nav_wrap
 {
-  margin-top: 0px
+  margin-top:20px
 }
 
 #primary_nav_wrap ul
@@ -98,10 +99,10 @@ body {
    background-position:center;
 }
 div {
-  height: 200px;
+  height: 400px;
   background-size: cover;
   position: relative;
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
   border-radius: 12px;
 
 }
@@ -120,11 +121,9 @@ h2 {
   font-size: 60px;
 }
 p {
-  color: rgba(255,255,255,1);
-  background: black;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  color: black;
+  background: transparent;
+  
   padding: 10px;
   line-height: 68px;
   text-align: justify;
@@ -134,45 +133,7 @@ p {
   margin: 0;
 }
 
-.first{
-  background-image: url("https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1450797_237855826390633_1796913480_n.jpg?oh=02dd0645d16f48abca623aa60a94007e&oe=54E581D7&__gda__=1425574916_6ef76ce5a7248029fb0dca400d4fb688");
-  background-position:center;
-}
 
-.first p {
-  display:none;
-}
-
-.first:hover p {
-  display: block;
-}
-
-.second{
-  background-image: url("https://scontent-b-dfw.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1470372_237858733057009_768053472_n.jpg?oh=0248875e251b15fc3f7fd12315c5908d&oe=54E23C4B");
-  background-position:center;
-}
-.second p {
-  display:none;
-}
-
-.second:hover p {
-  display: block;
-}
-.dessert{
-  background-image: url("https://scontent-a-dfw.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10440697_355512204624994_4913567071764937478_n.jpg?oh=aeaab70c889e60fe98c3f8230596469f&oe=54E000AD");
-  background-position:center;
-}
-.dessert p {
-  display:none;
-}
-
-.dessert:hover p {
-  display: block;
-}
-
-.price {
-  float: center;
-}
 .stitched {
    padding: 20px;
    margin: 10px;
@@ -197,11 +158,29 @@ p {
    border-radius: 10px;
    font-weight: normal;
 }
+
+.second{
+  background-position:center;
+  height: 500px;
+}
+.second p {
+  font-size: 35px;
+  font-family: 'Open Sans';
+  position: center;
+  color: black;
+}
+
+.second:hover p {
+  display: block;
+}
+
 .btn-lg {
   font-size: 60px;
   padding: 30px;
 margin: 40px;
-position: center;
+position: bottom; 
+float: bottom;
+
 
 }
 
@@ -212,6 +191,7 @@ position: center;
 </style>
 
 </head>
+
 
 <body>
   <nav id="primary_nav_wrap">
@@ -245,28 +225,31 @@ position: center;
         </ul>
       
   <a href=</li>
-  <li><a href="http:\\tarafinnmua.com/effects">Special Effects</a></li>
+  <li><a href="http:\\tarafinnmua.com/effects">Effects</a></li>
   
-  <li><a href="http:\\tarafinnmua.com/shoots">Fashion Shoots</a></li>
+  <li><a href="http:\\tarafinnmua.com/treatments">Beauty Treatments</a></li>
   <li><a href="http:\\tarafinnmua.com/contact">Contact Tara</a></li>
 </ul>
 </nav>
 <h1 class="stitched">Tara Finn</h1>
-<h2 class="lower">Makeup Artist</h2>
-<div class="first">
-  <p>Bridal <span class="price"></span><br />
- </p>
-</div>
+<h2 class="lower">Special Effects</h2>
 
+
+
+<div class="your-class">
+  <div><a href="http://imgur.com/BBCJy0q"><img src="http://i.imgur.com/BBCJy0q.jpg" title="source: imgur.com" /></a></div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
+  
+
+  
 <div class="second">
-  <p>Fashion <span class="price"></span><br />
+  <p> Sometimes everyday makeup is not enough. Let Tara transform you into something scary or spectaular. Tara can work with briefs and special requests. Available for photoshoots, films and halloween/fancy dress parties.
   </p>
 </div>
   
-<div class="dessert">
-  <p>Special Effects <span class="price"></span><br />
-  </p>
-</div>
+
  <div id='social-buttons'>
 
       <a href="http://instagram.com/tarafinnmua" style="color: black; text-decoration: none;"><button class='btn btn-lg btn-twitter'>Instagram</button></a>
@@ -277,5 +260,16 @@ position: center;
 
 
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.your-class').slick({
+                setting-name: setting-value
+            });
+        });
+    </script>
 
 </body>
